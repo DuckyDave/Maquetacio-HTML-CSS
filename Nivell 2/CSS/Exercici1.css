@@ -1,0 +1,489 @@
+/* Navegacio i capcalera (Grafisme) CSS v1.0 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  max-height: 504px;
+  margin: 24px 20px 26px 26px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#nav,
+#cos,
+#peu {
+  max-width: 1154px;
+  display: flex;
+}
+
+#nav {
+  flex-flow: row wrap;
+  background-image: url("../imatges/header.jpg");
+  height: 405px;
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#nav-superior,
+#capcalera,
+#imatge-peu {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 100%;
+}
+
+#nav-superior {
+  justify-content: space-between;
+  height: 262px;
+  margin-bottom: 5px;
+}
+
+#capsa1,
+#capsa2,
+#capsa3 {
+  display: inherit;
+  height: 72px;
+}
+
+#capsa1,
+#capsa3 {
+  flex-basis: 160px;
+}
+
+#capsa2 {
+  flex-basis: 720px;
+}
+
+#capsa1 a,
+#capsa2 a,
+#capsa3 a {
+  color: gray;
+  text-align: center;
+}
+
+#capsa1 a:hover,
+#capsa2 a:hover,
+#capsa3 a:hover {
+  opacity: 0.5;
+}
+
+#capsa1 {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#capsa1 img {
+  width: 72px;
+  height: 72px;
+}
+
+#capsa2 {
+  flex-basis: 715px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#capsa2 ul,
+#capsa3 ul {
+  display: inherit;
+  flex-basis: 100%;
+  flex-flow: row nowrap;
+  margin: 24px 0px 0px;
+}
+
+#capsa2 li {
+  display: inherit;
+  flex-basis: 20%;
+}
+
+#capsa2 a span {
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#capsa3 {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#capsa3 ul {
+  justify-content: flex-end;
+}
+
+#capsa3 li {
+  display: inherit;
+}
+
+#capsa3 li:first-of-type {
+  margin: 0px 20px;
+}
+
+#capsa3 li:last-of-type {
+  margin-right: 45px;
+}
+
+#capcalera {
+  margin: 5px 0px 0px;
+  height: 133px;
+}
+
+#imatge-capcalera {
+  display: flex;
+  flex-basis: 1116px;
+  justify-content: center;
+  margin: 0px 75px 0px;
+  background-color: #d8d8d8;
+  opacity: 0.5;
+}
+
+q {
+  margin-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: #f0763a;
+}
+
+#header {
+  width: fit-content;
+  height: fit-content;
+}
+
+#cos {
+  justify-content: space-between;
+  margin: 24px 0px;
+}
+
+#llistat-articles {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 760px;
+  justify-content: inherit;
+  padding: 20px;
+  margin: 0px 10px 0px 0px;
+  background-color: #44465e;
+}
+
+.articles-item-left,
+.articles-item-right,
+.articles-last-item {
+  display: flex;
+}
+
+.articles-item-left,
+.articles-item-right {
+  flex-basis: 48.611111%;
+  /* (350px / 720px) * 100  = 48.611111 % */
+  margin-bottom: 20px;
+  background-color: #1664a4;
+}
+
+.articles-last-item {
+  flex-basis: 100%;
+  /* 720px */
+  background-color: #6399bb;
+}
+
+#llistat-altres {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 330px;
+  margin: 0px 0px 0px 10px;
+  background-color: #f94c47;
+}
+
+.altres-item {
+  display: flex;
+  flex-basis: 290px;
+  margin: 20px 20px 0px 20px;
+  background-color: #ffe380;
+}
+
+.altres-item:last-of-type {
+  margin: 10px 20px 60px;
+}
+
+#peu {
+  flex-flow: row wrap;
+}
+
+#imatge-peu {
+  background-color: #e4a434;
+}
+
+/* Responsive Design Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 410px;
+    max-height: 1123px;
+    margin: 24px 30px 19px 31px;
+  }
+
+  #nav,
+  #cos,
+  #peu {
+    max-width: 350px;
+  }
+
+  #nav {
+    background-image: url("../imatges/header_mobile.jpg");
+    background-size: cover;
+    height:fit-content;
+  }
+
+  #nav-superior,
+  #capcalera {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px;
+    height:inherit;
+  }
+
+  #nav-superior {
+    border-bottom: 30px;
+  }
+
+  #capsa1,
+  #capsa2,
+  #capsa3 {
+    flex-basis: 100%;
+    display: inherit;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: inherit;
+  }
+
+  #capsa1 {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+
+  #capsa1 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #capsa2 {
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+
+  #capsa2 ul {
+    flex-flow: inherit;
+    margin: 0px;
+    justify-content: inherit;
+  }
+
+  #capsa2 li {
+    flex-basis: 100%;
+    justify-content: inherit;
+    margin: 5px;
+  }
+
+  #capsa3 {
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  #capsa3 ul {
+    flex-flow: inherit;
+    justify-content: inherit;
+    margin: 0px;
+  }
+
+  #capsa3 li:first-of-type,
+  #capsa3 li:last-of-type {
+    justify-content: inherit;
+    margin: 5px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  #imatge-capcalera {
+    display: flex;
+    flex-basis: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+  }
+
+  #cos {
+    flex-flow: row wrap;
+    margin: 30px 0px;
+    border: 30px solid #fee228;
+  }
+
+  #llistat-articles,
+  #llistat-altres {
+    margin: 0px;
+  }
+
+  #llistat-articles {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    padding: 0px;
+    border-bottom: 15px solid #fee228;
+    background-color: #09506f;
+  }
+
+  .articles-item-left,
+  .articles-item-right {
+    flex-basis: 100%;
+    margin: 30px 30px 0px;
+    background-color: #62959c;
+  }
+
+  .articles-last-item {
+    flex-basis: 100%;
+    margin: 30px;
+    background-color: #a3ddcb;
+  }
+
+  #llistat-altres {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    border-top: 15px solid #fee228;
+    background-color: #fd7b54;
+  }
+
+  .altres-item {
+    flex-basis: 100%;
+    margin: 30px 30px 7px 30px;
+    background-color: #fdb36b;
+  }
+
+  .altres-item:last-of-type {
+    margin: 7px 30px 30px 30px;
+    background-color: #fdb36b;
+  }
+
+  #imatge-peu {
+    background-color: #fdc764;
+  }
+}
+
+/* Responsive Design Tablet */
+@media screen and (min-width: 600px) and (orientation: portrait) {
+  body {
+    max-width: 690px;
+    max-height: 627px;
+    margin: 22px 33px 44px 28px;
+  }
+
+  #nav,
+  #cos,
+  #peu {
+    max-width: 630px;
+  }
+
+  #capsa1,
+  #capsa2,
+  #capsa3 {
+    height: 87px;
+  }
+
+  #capsa1,
+  #capsa3 {
+    flex-basis: 87px;
+  }
+
+  #capsa1 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #capsa2 {
+    flex-basis: 340px;
+  }
+
+  #capsa2 ul {
+    flex-flow: column wrap;
+    margin: 0px;
+  }
+
+  #capsa2 li {
+    justify-content: center;
+    margin: 5px;
+  }
+
+  #capcalera {
+    margin-top: 5px;
+  }
+
+  #cos {
+    flex-flow: row wrap;
+    border: 20px solid #feff03;
+    background-color: #feff03;
+  }
+
+  #llistat-articles {
+    flex-basis: 100%;
+    /* 588px */
+    margin: 0px 0px 10px 0px;
+    background-color: #4e4e6a;
+  }
+
+  .articles-item-left,
+  .articles-item-right {
+    flex-basis: 48.18181818181818%;
+    /* (265px / 550px) * 100  = 48,18181818181818 % */
+    margin-bottom: 20px;
+    background-color: #1f6cb0;
+  }
+
+  .articles-last-item {
+    flex-basis: 100%;
+    /* 550px */
+    background-color: #6399bb;
+  }
+
+  #llistat-altres {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    /* 590px */
+    margin: 10px 0px 0px 0px;
+    background-color: #f73f52;
+  }
+
+  .altres-item {
+    flex-basis: 100%;
+    /* 550px */
+    margin: 20px 20px 5px 20px;
+    background-color: #feea85;
+  }
+
+  .altres-item:last-of-type {
+    margin: 5px 20px 20px 20px;
+  }
+}
